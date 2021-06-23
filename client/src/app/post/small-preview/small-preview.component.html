@@ -1,0 +1,11 @@
+<a href="#" class="stretched-link blog-link small-preview">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2" ngClass="{{postFromHomeComponent?.typeString}}">{{postFromHomeComponent?.typeString}}</strong>
+            <h3 class="mb-0">{{titlePreview}}</h3>
+            <h5>{{subtitlePreview}}</h5>
+            <div class="mb-1 text-muted">{{postFromHomeComponent?.creationDate | date }}</div>
+            <p class="card-text mb-auto">{{bodyPreview}}</p>
+        </div>
+    </div>
+</a>

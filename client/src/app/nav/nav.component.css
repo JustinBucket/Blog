@@ -1,0 +1,12 @@
+.nav-link {
+    display: inline-block;
+    width: 123px;
+}
+
+.search-container {
+    padding: 5px;
+}
+
+.search-bar {
+    border-radius: 5px;
+}
