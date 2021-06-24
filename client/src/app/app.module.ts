@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { PostService } from './_services/post.service';
 import { LargePreviewComponent } from './post/large-preview/large-preview.component';
 import { SmallPreviewComponent } from './post/small-preview/small-preview.component';
+import { FullPostComponent } from './post/full-post/full-post.component';
+import { FilteredPostsComponent } from './post/filtered-posts/filtered-posts.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { SmallPreviewComponent } from './post/small-preview/small-preview.compon
     NavComponent,
     HomeComponent,
     LargePreviewComponent,
-    SmallPreviewComponent
+    SmallPreviewComponent,
+    FullPostComponent,
+    FilteredPostsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

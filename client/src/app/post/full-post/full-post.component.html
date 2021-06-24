@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <div class="blog-post">
+    <div class="row">
+      <div class="col-md-8 px-0 post-info">
+        <h4 class="d-inline-block mb-2" ngClass="{{ fullPost?.typeString }}">
+          {{ fullPost?.typeString }}
+        </h4>
+        <h1 class="display-4">{{ fullPost?.title }}</h1>
+        <h2 class="subtitle">{{ fullPost?.subtitle }}</h2>
+        <h4>{{ fullPost?.creationDate | date }}</h4>
+      </div>
+
+      <div class="col-md-4">
+        <img
+          src="{{ fullPost?.imagePath }}"
+          alt="Image Preview"
+          class="preview-image"
+        />
+      </div>
+    </div>
+    <div class="paragraph-container">
+      <hr class="separator"/>
+      <div *ngFor="let par of fullPost?.paragraphs">
+        <p class="post-text">{{ par }}</p>
+      </div>
+    </div>
+  </div>
+</div>

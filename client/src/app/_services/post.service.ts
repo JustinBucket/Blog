@@ -16,4 +16,9 @@ export class PostService {
     return this.http.get<Post[]>(this.baseUrl);
   }
 
+  pullPost(id: number) {
+    console.log("pulling post");
+    return this.http.get<Post>(this.baseUrl + id);
+  }
+
 }
